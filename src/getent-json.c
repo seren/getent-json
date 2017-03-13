@@ -88,7 +88,7 @@ int main(int argc, char **argv) {
     j_obj = getent_rpc(0);
   }
 
-  if (database_name) { free(database_name); }
+  free(database_name)
 
   if (j_obj == NULL) {
     printf("database not found or not supported\n");
